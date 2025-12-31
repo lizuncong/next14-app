@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default async function Home() {
+export default async function Cat() {
   const res = await fetch("https://api.thecatapi.com/v1/images/search").then(
     (res) => res.json()
   );
