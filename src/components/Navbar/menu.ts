@@ -24,7 +24,14 @@ export const navItems: NavItem[] = [
     children: [
       { href: "/cache/fetch/dynamic/12", label: "动态渲染-fetch请求默认缓存" },
       { href: "/cache/fetch/static-render", label: "静态渲染" },
-      { href: "/cache/router-cache/en/products", label: "客户端路由缓存" },
+      {
+        href: "/cache/router-cache/en/products",
+        label: "客户端路由缓存(动态渲染)",
+      },
+      {
+        href: "/cache/router-cache/static-render",
+        label: "客户端路由缓存(静态渲染)",
+      },
 
       // { href: "/cache/full-route", label: "全路由缓存" },
     ],
