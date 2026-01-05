@@ -1,4 +1,3 @@
-import Link from "next/link";
 export default async function Page() {
   console.log("rouer cache static render2=====");
   return (
