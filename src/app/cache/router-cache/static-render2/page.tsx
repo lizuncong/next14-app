@@ -1,7 +1,6 @@
 import Link from "next/link";
-import Count from "./components/Count";
 export default async function Page() {
-  console.log("rouer cache static render=====");
+  console.log("rouer cache static render2=====");
   return (
     <main className="md">
       <h1 className="text-lg font-bold">
@@ -15,15 +14,6 @@ export default async function Page() {
         服务器渲染的时间：{new Date().toLocaleString()}{" "}
         <span className="text-red-500">每次请求，这个渲染时间都会重新生成</span>
       </div>
-      <div className="my-4">
-        <Link
-          className="text-blue-500"
-          href="/cache/router-cache/en/products/add"
-        >
-          Add
-        </Link>
-      </div>
-      <Count renderTime={new Date().toLocaleString()} />
     </main>
   );
 }

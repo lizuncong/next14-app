@@ -4,7 +4,7 @@ export default async function Home() {
   const res = await fetch("https://api.thecatapi.com/v1/images/search").then(
     (res) => res.json()
   );
-  console.log("res....", res);
+  console.log("home page render res....", res);
   const catInfo = res?.[0];
   return (
     <main className=" ">
