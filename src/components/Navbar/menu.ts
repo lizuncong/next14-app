@@ -36,6 +36,10 @@ export const navItems: NavItem[] = [
         href: "/cache/router-cache/static-render2",
         label: "客户端路由缓存(静态渲染2)",
       },
+      {
+        href: "/static-render3",
+        label: "客户端路由缓存(静态渲染3)",
+      },
       // { href: "/cache/full-route", label: "全路由缓存" },
     ],
   },
