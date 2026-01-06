@@ -7,11 +7,14 @@ export default async function Page() {
       </h1>
       <p>
         本篇文章演示了Next.js
-        14的客户端路由缓存功能。这个页面是静态渲染的页面，会在客户端缓存5分钟
+        14的客户端路由缓存功能。按照next14文档的说法，静态渲染的页面，客户端路由缓存是5分钟。
+        这个页面是静态渲染的页面，但实际上超过30秒，缓存就失效了，会重新请求
       </p>
       <div>
         服务器渲染的时间：{new Date().toLocaleString()}{" "}
-        <span className="text-red-500">每次请求，这个渲染时间都会重新生成</span>
+        <span className="text-red-500">
+          这个时间是构建时生成的，每次请求，都是不变的
+        </span>
       </div>
     </main>
   );

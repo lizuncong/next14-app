@@ -9,7 +9,7 @@ export default async function Page() {
   return (
     <main>
       <div>
-        服务器渲染的时间：{new Date().toLocaleString()}{" "}
+        服务器构建的时间：{new Date().toLocaleString()}{" "}
         <span className="text-red-500">
           在构建时生成，每次刷新，这个时间都不会变
         </span>
