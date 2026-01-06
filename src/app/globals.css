@@ -43,3 +43,17 @@ main {
     text-wrap: balance;
   }
 }
+
+/* details/summary 样式 */
+details summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* details 打开时，summary 内的 SVG 旋转 */
+details[open] summary svg {
+  transform: rotate(180deg);
+}

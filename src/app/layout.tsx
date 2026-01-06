@@ -14,11 +14,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body
-        className={`antialiased flex flex-col items-center bg-zinc-50 h-screen`}
-      >
-        <Navbar />
-        {children}
+      <body className="antialiased bg-zinc-50 h-screen">
+        <div className="flex h-full">
+          <Navbar />
+          <main className="flex-1 ml-80 overflow-y-auto">
+            <div className="max-w-4xl mx-auto p-8">{children}</div>
+          </main>
+        </div>
       </body>
     </html>
   );
