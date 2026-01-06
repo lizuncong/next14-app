@@ -20,6 +20,9 @@ export default async function Page({
         的，因此会在客户端缓存30秒。可以点击Add按钮跳去添加商品页面，添加商品后，返回本页面，会发现30秒内，商品列表没有更新。
         注意观察服务器渲染时间和客户端useEffect执行时间。
       </p>
+      <p>
+        如果Nav导航组件中，设置Link的prefetch属性为true，那么缓存时间就是5分钟
+      </p>
       <div>
         服务器渲染的时间：{new Date().toLocaleString()}{" "}
         <span className="text-red-500">每次请求，这个渲染时间都会重新生成</span>
